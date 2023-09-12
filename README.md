@@ -34,9 +34,9 @@ Descargar modelo 3D desde GoogleDrive y dejarlo en el directorio `public/bot`
 - PERMISO Y VACACIONES
 - GETION HORAS EXTRAS
 
-EXTRAS
+ADICIONAL
 
-- Al tener conicencia este bot puede preguntarle por su hermosa casa y tambien por su creador.
+- Al tener conicencia, al bot puedes preguntarle por su hermosa casa y también por su creador.
 
 > Tiene las siguientes interacciones:
 - Prompt, puede consultar lo que desees, si el chatbot tiene la respuesta te respondera sin dudarlo.

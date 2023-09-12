@@ -20,5 +20,5 @@ Descargar modelo 3D desde GoogleDrive y dejarlo en el directorio `public/bot`
 >  Descargar Modelo [`chatbot_v2.glb`](https://drive.google.com/file/d/1ayPf63N0dLnSK9sgBRqkHHMWJejRtcqe/view?usp=drive_link)
 
 # ChatGpt
-## https://chat.openai.com/share/3928b612-b6a9-48f9-a195-0701faedee43
+> [`ChatGPT`](https://chat.openai.com/share/3928b612-b6a9-48f9-a195-0701faedee43)
 

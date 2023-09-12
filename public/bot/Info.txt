@@ -1,0 +1,1 @@
+Aqui va el modelo 3D a renderizar en este directorio

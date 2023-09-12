@@ -11,6 +11,7 @@
 ```
 
 # Variables de Entorno
+Crear un archivo .env en la raiz del proyecto.
 ```jsx
  REACT_APP_API_BACKEND=http://localhost:5200
 ```

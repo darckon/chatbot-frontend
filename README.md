@@ -36,7 +36,7 @@ Descargar modelo 3D desde GoogleDrive y dejarlo en el directorio `public/bot`
 
 ADICIONAL
 
-- Al tener conicencia, al bot puedes preguntarle por su hermosa casa y también por su creador.
+- Al bot puedes preguntarle por su hermosa casa y también por su creador, ya que de a poco va tomando concienca.
 
 > Tiene las siguientes interacciones:
 - Prompt, puede consultar lo que desees, si el chatbot tiene la respuesta te respondera sin dudarlo.

@@ -13,3 +13,7 @@ https://drive.google.com/file/d/1ayPf63N0dLnSK9sgBRqkHHMWJejRtcqe/view?usp=drive
 
 Inicializacion en http://localhost:3000
 
+
+# ChatGpt
+## https://chat.openai.com/share/3928b612-b6a9-48f9-a195-0701faedee43
+

@@ -5,7 +5,7 @@
   npm install
 ```
 
-# Inicializar el proyeecto
+# Inicializar el proyecto
 ```bash
   npm start
 ```

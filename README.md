@@ -7,6 +7,9 @@
 # Variables de Entorno
 ## - REACT_APP_API_BACKEND: IP de tu Backend
 
+# Modelo 3D
+## Descargar modelo 3D desde GoogleDrive y dejarlo en el directorio public/bot
+https://drive.google.com/file/d/1ayPf63N0dLnSK9sgBRqkHHMWJejRtcqe/view?usp=drive_link
 
 Inicializacion en http://localhost:3000
 

@@ -1,5 +1,4 @@
-[![logo](logo.jpg)](https://codesandbox.io/s/bfplr](https://drive.google.com/file/d/1Ldgg1dNQZMZGGkH_nwSqo_L939-mNrEq/view?usp=sharing))
-
+![Blender](https://drive.google.com/uc?export=download&id=1Ldgg1dNQZMZGGkH_nwSqo_L939-mNrEq)
 
 # Intalar dependencias
 ### `npm install`

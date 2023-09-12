@@ -39,9 +39,9 @@ ADICIONAL
 - Al bot puedes preguntarle por su hermosa casa y también por su creador, ya que de a poco va tomando concienca.
 
 > Tiene las siguientes interacciones:
-- Prompt, puede consultar lo que desees, si el chatbot tiene la respuesta te respondera sin dudarlo.
-- Doble click a la pantalla te llevará a una vista mas clara y frontal para ver lo que responde el chatbot.
-- Click al personaje, este se dará cuenta de tu precencial al otro lado de la pantalla y te saludará probablemente.
+- Prompt, puedes consultar lo que desees, si el chatbot tiene la respuesta te respondera sin dudarlo.
+- Doble click al objeto 3D pantalla (la que el bot esta mirando) te llevará a una vista mas clara y frontal para ver lo que responde el chatbot.
+- Click al personaje, este se dará cuenta de tu precencia al otro lado de la pantalla y te saludará probablemente.
 - Se puede con el mouse navegar por el entorno 3D.
 
 La idea es que esto pueda seguir creciendo y no solo sea una casa de 1 piso sino un par de habitaciones mas donde se pueden hacer muchas cosas como por ejemplo Entrenar en tiempo real al bot.

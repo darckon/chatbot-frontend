@@ -8,7 +8,7 @@ import { useGLTF, useAnimations, Text  } from '@react-three/drei'
 import { gptApi } from '../../services/gptService'
 
 export default function Robot(props) {
-  const { nodes, materials, animations } = useGLTF('/bot/chatbot_v2.glb')
+  const { nodes, materials, animations } = useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
   const { ref, actions } = useAnimations(animations)
 
   useEffect(() => {
@@ -16,18 +16,36 @@ export default function Robot(props) {
     actions['Rob_Sentado'].reset().fadeIn(0.5).play()
   })
 
+  const touchRobot = () => {
+    setAnimation(3)
+    setTimeout(() => {
+      setAnimation(1)
+    }, 4200);
+  }
+
   const setAnimation = (op) => {
     switch (op) {
       case 1:
         console.log('pase opcion 1')
-        actions['Rob_Writting'].fadeIn(0.5).stop()
+        actions['Rob_Writting'].fadeOut(0.5).stop()
+        actions['Rob_Salute'].fadeOut(0.5).stop()
         actions['Rob_Sentado'].fadeIn(0.5).play()
       break;
 
       case 2:
         console.log('pase opcion 2')
-        actions['Rob_Sentado'].fadeIn(0.5).stop()
+        actions['Rob_Sentado'].fadeOut(0.5).stop()
+        actions['Rob_Salute'].fadeOut(0.5).stop()
         actions['Rob_Writting'].fadeIn(0.5).play()
+      break;
+
+      case 3:
+        console.log('pase opcion 3')
+        console.log(actions)
+        actions['Rob_Sentado'].fadeOut(0.5).stop()
+        actions['Rob_Writting'].fadeOut(0.5).stop()
+        actions['Rob_Salute'].fadeIn(0.5).play()
+        
       break;
     
       default:
@@ -40,6 +58,7 @@ export default function Robot(props) {
         <group position={[0.3, 1.18, -0.8]} scale={0.3}>
           <primitive object={nodes.Bone} />
           <skinnedMesh
+            onClick={touchRobot}
             geometry={nodes.Mesh023.geometry}
             material={materials.Visor}
             skeleton={nodes.Mesh023.skeleton}>
@@ -54,4 +73,4 @@ export default function Robot(props) {
   )
 }
 
-useGLTF.preload('/bot/chatbot_v2.glb')
+useGLTF.preload(`/bot/${process.env.REACT_APP_MODEL}.glb`)

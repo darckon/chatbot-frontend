@@ -2,7 +2,7 @@ import { useAnimations, useGLTF } from '@react-three/drei'
 import { useEffect } from 'react'
 
 export default function Cactus(props) {
-  const { nodes, materials, animations } =  useGLTF('/bot/chatbot_v2.glb')
+  const { nodes, materials, animations } =  useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
   const { ref, actions } = useAnimations(animations)
 
   useEffect(() => {

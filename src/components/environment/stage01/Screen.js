@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 
 
 export default function Screen(props) {
-  const { nodes, materials, animations } = useGLTF('/bot/chatbot_v2.glb')
+  const { nodes, materials, animations } = useGLTF('/bot/chatbot_v3.glb')
   const { ref } = useAnimations(animations)
   const [ textGpt, setTextGpt ] = useState('')
   const fontProps = { fontSize: 0.05, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }

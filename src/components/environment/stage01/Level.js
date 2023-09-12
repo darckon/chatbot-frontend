@@ -3,7 +3,7 @@ import { useGLTF } from '@react-three/drei'
 import { useSpring } from '@react-spring/three'
 
 export default function Level() {
-  const { nodes } = useGLTF('/bot/chatbot_v2.glb')
+  const { nodes } = useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
   const { camera } = useThree()
   useSpring(
     () => ({

@@ -5,10 +5,9 @@ Command: npx gltfjsx@6.2.13 chatbot_v2.glb
 
 import { useEffect, useState } from 'react'
 import { useGLTF, useAnimations, Text  } from '@react-three/drei'
-import { gptApi } from '../../services/gptService'
 
 export default function Robot(props) {
-  const { nodes, materials, animations } = useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
+  const { nodes, materials, animations } = useGLTF(`/bot/chatbot_v3.glb`)
   const { ref, actions } = useAnimations(animations)
 
   useEffect(() => {
@@ -73,4 +72,4 @@ export default function Robot(props) {
   )
 }
 
-useGLTF.preload(`/bot/${process.env.REACT_APP_MODEL}.glb`)
+useGLTF.preload(`/bot/chatbot_v3.glb`)

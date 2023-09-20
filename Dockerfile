@@ -16,6 +16,8 @@ RUN npm install
 # Copia los archivos de la aplicación React al directorio de trabajo en el contenedor
 COPY . .
 
+RUN mv chatbot_v3.glb public/bot
+
 # Construye la aplicación React para producción
 RUN npm run build
 

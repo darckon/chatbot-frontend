@@ -10,7 +10,7 @@
 
 # production
 /build
-/public/bot/*
+/public/*
 
 # misc
 .DS_Store

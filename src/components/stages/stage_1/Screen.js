@@ -5,12 +5,12 @@ import { gsap } from 'gsap';
 
 
 export default function Screen(props) {
-  const { nodes, materials, animations } = useGLTF(`/bot/chatbot_v3.glb`)
+  const { nodes, materials, animations } = useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
   const { ref } = useAnimations(animations)
   const [ textGpt, setTextGpt ] = useState('')
   const fontProps = { fontSize: 0.05, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
   const [moveCamera, setMoveCamera] = useState(false);
-  const api = process.env.REACT_APP_API_BACKEND
+  const api = 'https://chatbot-backend-c2cbepyb3a-tl.a.run.app'
 
   const { camera } = useThree();
 

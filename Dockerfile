@@ -4,6 +4,9 @@ FROM node:19 AS builder
 # Establece el directorio de trabajo en /app
 WORKDIR /app
 
+# Descarga el archivo desde una URL (por ejemplo, un archivo .zip)
+RUN wget -O chatbot_v3.glb https://storage.googleapis.com/mihistoria-377001.appspot.com/chatbot_v3.glb
+
 # Copia el archivo de configuración de paquetes (package.json) y el archivo de bloqueo de paquetes (package-lock.json)
 COPY package*.json ./
 

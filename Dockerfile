@@ -20,8 +20,8 @@ RUN npm run build
 FROM nginx:alpine
 
 # Copia los archivos construidos de la aplicación React desde el 'builder' al directorio de trabajo en el contenedor
-COPY --from=builder /app/build /usr/share/nginx/html
-COPY --from=builder source/nginx.conf /etc/nginx/conf.d/
+COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build source/nginx.conf /etc/nginx/conf.d/
 
 # Expone el puerto 80 para servir la aplicación
 EXPOSE 8081

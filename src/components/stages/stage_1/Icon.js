@@ -3,7 +3,7 @@ import { useGLTF, useMatcapTexture } from '@react-three/drei'
 import { useSpring, a } from '@react-spring/three'
 
 export default function Icon() {
-  const { nodes } = useGLTF(`/bot/chatbot_v3.glb`)
+  const { nodes } = useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
   const [matcap] = useMatcapTexture('65A0C7_C3E4F8_A7D5EF_97CAE9', 1024)
   const [springs, api] = useSpring(() => ({ rotation: [0.8, 1.1, -0.4], position: [-0.79, 1.3, 0.5], config: { mass: 2, tension: 200 } }))
   useEffect(() => {

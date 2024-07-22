@@ -1,5 +1,5 @@
 # Usa una imagen base de Node.js para la construcción de la aplicación
-FROM node:19 AS builder
+FROM node:19 AS build
 
 # Establece el directorio de trabajo en /app
 WORKDIR /app
@@ -29,7 +29,7 @@ COPY --from=builder /app/build /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/
 
 # Expone el puerto 80 para servir la aplicación
-EXPOSE 8081
+EXPOSE 8082
 
 # El comando de inicio para servir la aplicación con Nginx
 CMD ["nginx", "-g", "daemon off;"]

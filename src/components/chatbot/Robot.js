@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import { useGLTF, useAnimations, Text  } from '@react-three/drei'
 
 export default function Robot(props) {
-  const { nodes, materials, animations } = useGLTF(`/bot/chatbot_v3.glb`)
+  const { nodes, materials, animations } = useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
   const { ref, actions } = useAnimations(animations)
 
   useEffect(() => {
@@ -72,4 +72,4 @@ export default function Robot(props) {
   )
 }
 
-useGLTF.preload(`/bot/chatbot_v3.glb`)
+useGLTF.preload(`/bot/${process.env.REACT_APP_MODEL}.glb`)

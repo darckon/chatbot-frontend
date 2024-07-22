@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 import { useSpring, a } from '@react-spring/three'
 
 export default function Sudo() {
-  const { nodes } = useGLTF(`/bot/chatbot_v3.glb`)
+  const { nodes } = useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
   const [spring, api] = useSpring(() => ({ rotation: [Math.PI / 2, 0, 0.29], config: { friction: 40 } }), [])
   useEffect(() => {
     let timeout

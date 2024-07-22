@@ -3,7 +3,7 @@ import { MeshWobbleMaterial, useAnimations, useGLTF, useMatcapTexture } from '@r
 import { useEffect } from 'react'
 
 export default function SohoTxt(props) {
-  const { nodes, materials, animations } =  useGLTF(`/bot/chatbot_v3.glb`)
+  const { nodes, materials, animations } =  useGLTF(`/bot/${process.env.REACT_APP_MODEL}.glb`)
   const { ref, actions } = useAnimations(animations)
   const [matcap] = useMatcapTexture('74A192_041B0D_194C33_235B4C', 1024)
   const [springs] = useSpring(() => ({ config: { mass: 2, tension: 200 } }))
